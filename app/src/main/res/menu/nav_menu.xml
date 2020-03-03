@@ -3,5 +3,8 @@
 
     <item
         android:id="@+id/menuTab"
-        android:title="Menu Item" />
+        android:title="Места в городе" />
+    <item
+        android:id="@+id/menuTab1"
+        android:title="Мой профиль" />
 </menu>

@@ -9,22 +9,26 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
+import net.smallacademy.tabs.Activities.LoginActivity;
+import net.smallacademy.tabs.Place.PlaceActivity;
+
+
 public class MainActivity extends AppCompatActivity implements  NavigationView.OnNavigationItemSelectedListener{
-    DrawerLayout drawerLayout;
-    ActionBarDrawerToggle toggle;
-    NavigationView navigationView;
-    ViewPager pager;
-    TabLayout mTabLayout;
-    TabItem firstItem,secondItem,thirdItem;
-    PagerAdapter adapter;
+    private DrawerLayout drawerLayout;
+    private ActionBarDrawerToggle toggle;
+    private NavigationView navigationView;
+    private ViewPager pager;
+    private TabLayout mTabLayout;
+    private TabItem firstItem,secondItem,thirdItem;
+    private PagerAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +82,14 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         drawerLayout.closeDrawer(GravityCompat.START);
         if(item.getItemId() == R.id.menuTab){
-            Toast.makeText(this, "Btn is clicked.", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, PlaceActivity.class);
+            startActivity(intent);
+            //Toast.makeText(this, "Btn is clicked.", Toast.LENGTH_SHORT).show();
+        }
+        if(item.getItemId() == R.id.menuTab1){
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+            //Toast.makeText(this, "Btn is clicked111.", Toast.LENGTH_SHORT).show();
         }
         return false;
     }
