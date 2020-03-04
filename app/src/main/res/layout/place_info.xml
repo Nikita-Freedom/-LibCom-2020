@@ -35,7 +35,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ooo"
+                android:text="@string/PlaceHello"
                 android:textSize="25sp"
                 android:layout_gravity="center_horizontal"
                 android:textColor="#212121"

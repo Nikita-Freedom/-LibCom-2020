@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="200dp"
     android:background="@color/background_fragment"
     android:orientation="vertical">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blurkonb"
+        android:scaleType="centerCrop"/>
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
         android:text="Путеводитель по международной конференции LIBCOM"
+        android:textAlignment="viewStart"
+        android:textAllCaps="true"
         android:textColor="#FFFFFF"
-        android:textSize="30sp"/>
-</LinearLayout>
+        android:textSize="24sp" />
+</RelativeLayout>

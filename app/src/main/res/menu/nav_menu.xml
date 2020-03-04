@@ -3,8 +3,11 @@
 
     <item
         android:id="@+id/menuTab"
-        android:title="Места в городе" />
+        android:title="Места в городе"
+        android:icon="@drawable/ic_place_dp" />
     <item
         android:id="@+id/menuTab1"
-        android:title="Мой профиль" />
+        android:title="Мой профиль"
+        android:icon="@drawable/ic_person_24dp"
+        />
 </menu>

@@ -18,6 +18,7 @@ public class ActivityPlaceInfo extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_place_info);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Log.d(TAG, "onCreate: started.");
 
         getIncomingIntent();
@@ -42,15 +43,21 @@ public class ActivityPlaceInfo extends AppCompatActivity {
 
         TextView name = findViewById(R.id.image_description);
         TextView dis = findViewById(R.id.description);
+
+
+
+
+
+
         name.setText(imageName);
         dis.setText(mDis);
 
 
         ImageView image = findViewById(R.id.image);
-        Glide.with(this)
-                .asBitmap()
-                .load(imageUrl)
-                .into(image);
+       Glide.with(this)
+               .asBitmap()
+               .load(imageUrl)
+               .into(image);
     }
 
 }

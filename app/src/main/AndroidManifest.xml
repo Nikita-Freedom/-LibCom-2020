@@ -11,10 +11,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityPlaceInfo"></activity>
+        <activity android:name=".ActivityPlaceInfo2"
+            android:parentActivityName=".Place.PlaceActivity"/>
+        <activity
+            android:name=".ActivityPlaceInfo"
+            android:parentActivityName=".Place.PlaceActivity" />
         <activity android:name=".Activities.RecipeActivity" />
-        <activity android:name=".Activities.LoginActivity" />
-        <activity android:name=".Place.PlaceActivity" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Place.PlaceActivity"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
