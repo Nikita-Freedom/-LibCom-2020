@@ -91,6 +91,16 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
             startActivity(intent);
             //Toast.makeText(this, "Btn is clicked111.", Toast.LENGTH_SHORT).show();
         }
+        if(item.getItemId() == R.id.menuTab2){
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+            //Toast.makeText(this, "Btn is clicked111.", Toast.LENGTH_SHORT).show();
+        }
+        if(item.getItemId() == R.id.menuTab3){
+            Intent intent = new Intent(MainActivity.this, ActivityAbout.class);
+            startActivity(intent);
+            //Toast.makeText(this, "Btn is clicked111.", Toast.LENGTH_SHORT).show();
+        }
         return false;
     }
 }

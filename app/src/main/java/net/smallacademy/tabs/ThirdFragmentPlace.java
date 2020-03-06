@@ -15,7 +15,6 @@ import android.view.ViewGroup;
 
 import net.smallacademy.tabs.Place.PlaceModel;
 import net.smallacademy.tabs.Place.RecyclerViewAdapter;
-import net.smallacademy.tabs.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +25,7 @@ import static androidx.constraintlayout.widget.Constraints.TAG;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Second extends Fragment {
+public class ThirdFragmentPlace extends Fragment {
     View v;
     private ArrayList<String> mNames2 = new ArrayList<>();
     private ArrayList<String> mImageUrls2 = new ArrayList<>();
@@ -35,14 +34,14 @@ public class Second extends Fragment {
     private RecyclerView myrecyclerview;
     private List<PlaceModel> lstplacemodel;
 
-    public Second() {
+    public ThirdFragmentPlace() {
         // Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        v =  inflater.inflate(R.layout.fragment_second, container, false);
+        v =  inflater.inflate(R.layout.fragment_third_place, container, false);
         // myrecyclerview = (RecyclerView) v.findViewById(R.id.second_place_recyclerview);
         // RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), lstplacemodel, );
         // myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
@@ -163,7 +162,7 @@ public class Second extends Fragment {
 
     private void initRecyclerView(){
         Log.d(TAG, "initRecyclerView: init recyclerview.");
-        myrecyclerview = (RecyclerView) v.findViewById(R.id.fragment_second_recyclerview);
+        myrecyclerview = (RecyclerView) v.findViewById(R.id.third_place_recyclerview);
         RecyclerViewAdapter recyclerViewAdapter2 = new RecyclerViewAdapter(getContext(), lstplacemodel, mNames2, mImageUrls2, mDis2);
         myrecyclerview.setAdapter(recyclerViewAdapter2);
         myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));

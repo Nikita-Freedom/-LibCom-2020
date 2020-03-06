@@ -8,6 +8,7 @@ import android.os.Bundle;
 import com.google.android.material.tabs.TabLayout;
 
 import net.smallacademy.tabs.R;
+import net.smallacademy.tabs.ThirdFragmentPlace;
 
 
 public class PlaceActivity extends AppCompatActivity{
@@ -26,6 +27,7 @@ public class PlaceActivity extends AppCompatActivity{
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.AddFragment(new FirstPlace(), "Где остановиться?");
         adapter.AddFragment(new SecondPlace(), "Места");
+        adapter.AddFragment(new ThirdFragmentPlace(), "Кафе");
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
 
