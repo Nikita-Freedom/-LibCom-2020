@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -30,7 +31,7 @@ public class ThirdFragmentPlace extends Fragment {
     private ArrayList<String> mNames2 = new ArrayList<>();
     private ArrayList<String> mImageUrls2 = new ArrayList<>();
     private ArrayList<String> mDis2 = new ArrayList<>();
-
+    private SwipeRefreshLayout swipeRefresh;
     private RecyclerView myrecyclerview;
     private List<PlaceModel> lstplacemodel;
 
@@ -46,11 +47,44 @@ public class ThirdFragmentPlace extends Fragment {
         // RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), lstplacemodel, );
         // myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
         // myrecyclerview.setAdapter(recyclerViewAdapter);
+        swipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.swipe_refresh_third);
+        swipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swipeRefresh.setRefreshing(false);
+                //initImageBitmaps();
+
+            }
+        });
         initImageBitmaps();
         return v;
     }
     private void initImageBitmaps(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
+
+
+        mImageUrls2.add("https://avatars.mds.yandex.net/get-altay/1868686/2a00000169dece8a17dea07d3789cf872301/XXL");
+        mNames2.add("Табаско");
+        mDis2.add("Время работы:\n\n" +
+                "Понедельник - " +
+                "07:00 – 21:00\n" +
+                "Вторник - " +
+                "07:00 – 21:00\n" +
+                "Среда - " +
+                "07:00 – 21:00\n" +
+                "Четверг - " +
+                "07:00 – 21:00\n" +
+                "Пятница - " +
+                "07:00 – 22:00\n" +
+                "Суббота - " +
+                "07:00 – 22:00\n" +
+                "Воскресенье - " +
+                "07:00 – 21:00\n\n" +
+                "Адрес:\n\n" +
+                "Россия, Калининград, Театральная улица, 30, ТРЦ Европа, этаж 2\n\n" +
+                "Номер телефона:\n" +
+                "+7 (4012) 92-11-31\n");
+
 
         mImageUrls2.add("https://mir-s3-cdn-cf.behance.net/project_modules/1400/0c00f087230889.5db17f751f07e.jpg");
         mNames2.add("Кафе \"Порто кофе\"");
@@ -141,27 +175,7 @@ public class ThirdFragmentPlace extends Fragment {
                 "Номер телефона:\n" +
                 "+7 (4012) 35-76-76\n");
 
-        mImageUrls2.add("https://avatars.mds.yandex.net/get-altay/1868686/2a00000169dece8a17dea07d3789cf872301/XXL");
-        mNames2.add("Табаско");
-        mDis2.add("Время работы:\n\n" +
-                "Понедельник - " +
-                "07:00 – 21:00\n" +
-                "Вторник - " +
-                "07:00 – 21:00\n" +
-                "Среда - " +
-                "07:00 – 21:00\n" +
-                "Четверг - " +
-                "07:00 – 21:00\n" +
-                "Пятница - " +
-                "07:00 – 22:00\n" +
-                "Суббота - " +
-                "07:00 – 22:00\n" +
-                "Воскресенье - " +
-                "07:00 – 21:00\n\n" +
-                "Адрес:\n\n" +
-                "Россия, Калининград, Театральная улица, 30, ТРЦ Европа, этаж 2\n\n" +
-                "Номер телефона:\n" +
-                "+7 (4012) 92-11-31\n");
+
 
         mImageUrls2.add("https://www.newkaliningrad.ru/upload/iblock/9c5/9c5a2b2b989ffe114782d222b2c1baef.jpg");
         mNames2.add("Патиссон Markt");
@@ -241,7 +255,7 @@ public class ThirdFragmentPlace extends Fragment {
                 "Номер телефона:\n" +
                 "+7 (4012) 38-94-68\n" +
                 "+7 (4012) 75-41-79\n");
-
+        swipeRefresh.setRefreshing(false);
         initRecyclerView();
     }
 

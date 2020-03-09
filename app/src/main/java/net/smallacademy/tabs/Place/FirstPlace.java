@@ -59,6 +59,7 @@ public class FirstPlace extends Fragment {
 
             }
         });
+        swipeRefresh.setRefreshing(false);
         initImageBitmaps();
         return v;
     }

@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -29,7 +30,7 @@ public class SecondPlace extends Fragment {
     private ArrayList<String> mNames2 = new ArrayList<>();
     private ArrayList<String> mImageUrls2 = new ArrayList<>();
     private ArrayList<String> mDis2 = new ArrayList<>();
-
+    private SwipeRefreshLayout swipeRefresh;
     private RecyclerView myrecyclerview;
     private List<PlaceModel> lstplacemodel;
 
@@ -45,6 +46,15 @@ public class SecondPlace extends Fragment {
        // RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), lstplacemodel, );
        // myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
        // myrecyclerview.setAdapter(recyclerViewAdapter);
+        swipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.swipe_refresh_second);
+        swipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swipeRefresh.setRefreshing(false);
+                //initImageBitmaps();
+
+            }
+        });
         initImageBitmaps();
         return v;
     }
@@ -241,6 +251,7 @@ public class SecondPlace extends Fragment {
                 "После восстановления в конце 20 века Кафедральный собор в Калининграде выполняет светские функции — ни католические, ни православные службы там не проводятся.\n" +
                 "Теперь здесь проходят органные концерты, лекции и экскурсии. Работает музей Иммануила Канта,  а снаружи у стены — захоронение философа.\n" +
                 "Окрестности собора интересны сами по себе. Остров Канта — одна большая парковая территория, где часто проходят ярмарки, праздники и народные гуляния. Разбит парк скульптур, а по Медовому мосту вы сможете попасть в Рыбную деревню.");
+        swipeRefresh.setRefreshing(false);
         initRecyclerView();
     }
 

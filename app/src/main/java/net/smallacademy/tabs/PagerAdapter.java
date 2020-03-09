@@ -23,6 +23,8 @@ public class PagerAdapter extends FragmentPagerAdapter {
                 return new Second();
             case 2 :
                 return new Third();
+            case 3 :
+                return new FourthFragment();
                 default: return null;
         }
     }
