@@ -10,11 +10,7 @@
         android:title="Регистрация"
         android:icon="@drawable/ic_person_24dp"
         />
-    <item
-        android:id="@+id/menuTab2"
-        android:title="Как добраться?"
-        android:icon="@drawable/ic_near_me_black_24dp"
-        />
+
     <item
         android:id="@+id/menuTab3"
         android:title="О приложении"

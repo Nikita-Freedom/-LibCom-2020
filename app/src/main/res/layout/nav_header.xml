@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="200dp"
-    android:background="@color/background_fragment"
+    android:background="@color/background_fragment2"
     android:orientation="vertical">
 
     <ImageView
@@ -20,5 +20,7 @@
         android:textAlignment="viewStart"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
         android:textSize="24sp" />
 </RelativeLayout>

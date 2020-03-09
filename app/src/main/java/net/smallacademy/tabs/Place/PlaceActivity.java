@@ -25,11 +25,14 @@ public class PlaceActivity extends AppCompatActivity{
         tabLayout = (TabLayout) findViewById(R.id.tablayout_id);
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
         adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.AddFragment(new FirstPlace(), "Где остановиться?");
-        adapter.AddFragment(new SecondPlace(), "Места");
+        adapter.AddFragment(new FirstPlace(), "Отели");
+        adapter.AddFragment(new SecondPlace(), "Достопримечательности");
         adapter.AddFragment(new ThirdFragmentPlace(), "Кафе");
         viewPager.setAdapter(adapter);
         tabLayout.setupWithViewPager(viewPager);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_hotel);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_plece);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_cafe);
 
     }
 }

@@ -1,5 +1,7 @@
 package net.smallacademy.tabs.API;
 
+import net.smallacademy.tabs.Recipe;
+
 import java.util.List;
 
 import retrofit2.Call;

@@ -1,4 +1,4 @@
-package net.smallacademy.tabs.Activities;
+package net.smallacademy.tabs;
 
 import androidx.appcompat.app.AppCompatActivity;
 

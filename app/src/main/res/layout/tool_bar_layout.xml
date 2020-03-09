@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.CollapsingToolbarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
+    android:theme="@style/ThemeOverlay.AppCompat"
+    android:id="@+id/toolbar1"
+    app:layout_scrollFlags="scroll|enterAlways">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Расписание:"
+    android:textSize="20sp"/>
+
+</com.google.android.material.appbar.CollapsingToolbarLayout>

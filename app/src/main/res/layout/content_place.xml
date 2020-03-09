@@ -10,7 +10,7 @@
         android:id="@+id/toolbar_place"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimaryDark2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        android:background="@color/colorPrimaryDark"
+        android:background="@color/colorPrimaryDark2"
         android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
         <com.google.android.material.tabs.TabItem
@@ -36,7 +36,7 @@
             android:id="@+id/secondItem_place"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tuesday" />
+            android:text="Tuesday"/>
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/ThirdItem_place"
@@ -50,8 +50,8 @@
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewpager_place"
-        android:layout_width="409dp"
-        android:layout_height="625dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tablayout" />

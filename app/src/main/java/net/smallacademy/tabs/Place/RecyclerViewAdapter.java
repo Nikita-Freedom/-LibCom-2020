@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.text.util.Linkify;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -110,6 +111,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             tv_name = (TextView) itemView.findViewById(R.id.name_first_place);
             img = (ImageView) itemView.findViewById(R.id.img_first_place);
             tv_Dis = (TextView) itemView.findViewById(R.id.description);
+
         }
     }
 }

@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import static net.smallacademy.tabs.R.drawable.hotel;
+
 public class ActivityPlaceInfo extends AppCompatActivity {
 
     private static final String TAG = "GalleryActivity";
