@@ -45,12 +45,7 @@ public class FirstPlace extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         v =  inflater.inflate(R.layout.fragment_first_place, container, false);
-        //myrecyclerview = (RecyclerView) v.findViewById(R.id.first_place_recyclerview);
-        //RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), lstplacemodel);
-        //myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
-        //myrecyclerview.setAdapter(recyclerViewAdapter);
-
-        swipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.swipe_refresh);
+        swipeRefresh = (SwipeRefreshLayout) v.findViewById(R.id.swipe_refresh_first);
         swipeRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
@@ -59,7 +54,6 @@ public class FirstPlace extends Fragment {
 
             }
         });
-        swipeRefresh.setRefreshing(false);
         initImageBitmaps();
         return v;
     }
