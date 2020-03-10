@@ -43,7 +43,7 @@
             android:id="@+id/thirditem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="11.11.20" />
+            android:text="11.11.2020" />
         <com.google.android.material.tabs.TabItem
             android:id="@+id/fourthitem"
             android:layout_width="wrap_content"
