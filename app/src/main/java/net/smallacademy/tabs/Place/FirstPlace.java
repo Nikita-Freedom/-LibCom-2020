@@ -68,7 +68,7 @@ public class FirstPlace extends Fragment {
 
 
         mImageUrls.add("https://www.ahstatic.com/photos/7258_ho_00_p_1024x768.jpg");
-        mNames.add("Гостиница Ибис Калининград Центр");
+        mNames.add("Гостиница Ibis Калининград");
         mDis.add("Адрес:\n" +
                 "Калининград, Московский проспект, 52; тел.: 8 (4012) 59-64-30; факс: 8 (4012) 59-64-31.\n\n" +
                 "Сайт:\n" +

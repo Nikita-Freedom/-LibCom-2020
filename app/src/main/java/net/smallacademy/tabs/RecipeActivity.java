@@ -10,6 +10,7 @@ import net.smallacademy.tabs.API.APIConfig;
 import net.smallacademy.tabs.R;
 
 public class RecipeActivity extends AppCompatActivity {
+
     public final static String RECIPE_URL = "recipe_url";
 
     private WebView webView;
@@ -18,7 +19,7 @@ public class RecipeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe);
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         webView = findViewById(R.id.web_view);
 
         String recipeUrl = APIConfig.API_HOST_HTML + getIntent().getStringExtra(RECIPE_URL);

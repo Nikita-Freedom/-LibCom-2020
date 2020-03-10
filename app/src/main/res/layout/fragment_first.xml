@@ -22,7 +22,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="260sp"
-                android:src="@drawable/blurkonb"
+                android:src="@drawable/kaf"
                 android:scaleType="centerCrop"
                 app:layout_collapseMode="parallax"/>
 
@@ -34,7 +34,7 @@
                 android:layout_marginRight="10sp"
                 android:fontFamily="sans-serif-black"
                 android:text="@string/Intrduce_LIBCOM2"
-                android:textAlignment="textStart"
+
                 android:textAllCaps="true"
                 android:textColor="#FFF"
                 android:textSize="20sp" />
@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/swipe_refresh"
         android:clipToPadding="true"
+
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         >
         <androidx.recyclerview.widget.RecyclerView

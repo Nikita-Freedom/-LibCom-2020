@@ -71,7 +71,7 @@ public class Second extends Fragment {
         return v;
     }
     private void loadRecipes() {
-        APIHelper.getInstance().getRecipes(14, new APIHelper.APIHelperCallback<List<Recipe>>() {
+        APIHelper.getInstance().getRecipes2(14, new APIHelper.APIHelperCallback<List<Recipe>>() {
             @Override
             public void onResponse(List<Recipe> response) {
                 recipeAdapter.setData(response);

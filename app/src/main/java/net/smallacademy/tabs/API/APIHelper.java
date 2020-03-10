@@ -49,6 +49,48 @@ public class APIHelper {
             }
         });
     }
+    public void getRecipes2(int category, final APIHelperCallback<List<Recipe>> callback) {
+        Call<List<Recipe>> call = apiService.getCooks2(category);
+        call.enqueue(new Callback<List<Recipe>>() {
+            @Override
+            public void onResponse(retrofit2.Call<List<Recipe>> call, retrofit2.Response<List<Recipe>> response) {
+                callback.onResponse(response.body());
+            }
+
+            @Override
+            public void onFailure(retrofit2.Call<List<Recipe>> call, Throwable t) {
+                callback.onError();
+            }
+        });
+    }
+    public void getRecipes3(int category, final APIHelperCallback<List<Recipe>> callback) {
+        Call<List<Recipe>> call = apiService.getCooks3(category);
+        call.enqueue(new Callback<List<Recipe>>() {
+            @Override
+            public void onResponse(retrofit2.Call<List<Recipe>> call, retrofit2.Response<List<Recipe>> response) {
+                callback.onResponse(response.body());
+            }
+
+            @Override
+            public void onFailure(retrofit2.Call<List<Recipe>> call, Throwable t) {
+                callback.onError();
+            }
+        });
+    }
+    public void getRecipes4(int category, final APIHelperCallback<List<Recipe>> callback) {
+        Call<List<Recipe>> call = apiService.getCooks4(category);
+        call.enqueue(new Callback<List<Recipe>>() {
+            @Override
+            public void onResponse(retrofit2.Call<List<Recipe>> call, retrofit2.Response<List<Recipe>> response) {
+                callback.onResponse(response.body());
+            }
+
+            @Override
+            public void onFailure(retrofit2.Call<List<Recipe>> call, Throwable t) {
+                callback.onError();
+            }
+        });
+    }
 
 
 }

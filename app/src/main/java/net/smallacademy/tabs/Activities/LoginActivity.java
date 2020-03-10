@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         webView = (WebView) findViewById(R.id.web_view1);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://www1.fips.ru/about/deyatelnost/konferentsii-seminary/mezhdunarodnaya-konferentsiya-libcom.php");
+        webView.loadUrl("http://lib39.ru/events/projects/biblioforum2020/reg.php");
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
     }

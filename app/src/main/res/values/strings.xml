@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">LibCom</string>
+    <string name="app_name">Путеводитель LibCom 2020</string>
     <string name="open">open</string>
     <string name="close">close</string>
     <string name="PlaceHello">В этом разделе вы можете посмотреть где гостиницы и отели, в которых вам удобнее всего будет остановиться</string>
     <string name="Intrduce_LIBCOM">Добро пожаловать в путеводитель по международной конференции LIBCOM!</string>
-    <string name="Intrduce_LIBCOM2">Добро пожаловать в путеводитель по международной конференции LIBCOM! Здесь вы можете посмотреть расписание мероприятий и их подробное описание.</string>
+    <string name="Intrduce_LIBCOM2">Добро пожаловать в путеводитель по международной конференции LIBCOM! В этом разделе вы сможете посмотреть расписание мероприятий и их подробное описание.</string>
     <string name="AboutPlace">В этом разделе вы можете ознакомиться с рекомендуемыми гостиницами и отелями</string>
     <string name="AboutPlace2">В этом разделе вы можете ознакомиться с интересными местами и достопримечательностями города</string>
     <string name="AboutKafe">В этом разделе вы можете ознакомиться с рекомендуемыми Кафе и ресторанами города</string>
