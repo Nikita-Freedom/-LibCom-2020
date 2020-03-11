@@ -59,8 +59,6 @@ public class FirstPlace extends Fragment {
     }
     private void initImageBitmaps(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
-
-
         mImageUrls.add("https://www.ahstatic.com/photos/7258_ho_00_p_1024x768.jpg");
         mNames.add("Гостиница Ibis Калининград");
         mDis.add("Адрес:\n" +
@@ -116,6 +114,7 @@ public class FirstPlace extends Fragment {
                 "\"Гостиница \"Калининград\": авт. №№ 5, 24, 36, 105, 106, 107; маршрут. такси №№ 72, 83 до ост. \"ул. Театральная\".");
         swipeRefresh.setRefreshing(false);
         initRecyclerView();
+
     }
 
 
@@ -125,6 +124,7 @@ public class FirstPlace extends Fragment {
         RecyclerViewAdapter recyclerViewAdapter = new RecyclerViewAdapter(getContext(), lstplacemodel, mNames, mImageUrls, mDis);
         myrecyclerview.setAdapter(recyclerViewAdapter);
         myrecyclerview.setLayoutManager(new LinearLayoutManager(getActivity()));
+
 
     }
 
