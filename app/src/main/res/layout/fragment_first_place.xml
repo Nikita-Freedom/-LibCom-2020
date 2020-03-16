@@ -22,7 +22,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="260sp"
-                android:src="@drawable/hot3"
+                android:src="@drawable/hot4"
                 android:scaleType="centerCrop"
                 app:layout_collapseMode="parallax"/>
 
