@@ -8,7 +8,6 @@ import android.os.Bundle;
 import com.google.android.material.tabs.TabLayout;
 
 import net.smallacademy.tabs.R;
-import net.smallacademy.tabs.ThirdFragmentPlace;
 
 
 public class PlaceActivity extends AppCompatActivity{

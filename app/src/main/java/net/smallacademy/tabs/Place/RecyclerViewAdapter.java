@@ -1,10 +1,8 @@
 package net.smallacademy.tabs.Place;
 
-import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
-import android.text.util.Linkify;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,9 +17,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
-import net.smallacademy.tabs.Activities.LoginActivity;
-import net.smallacademy.tabs.ActivityPlaceInfo;
-import net.smallacademy.tabs.MainActivity;
 import net.smallacademy.tabs.R;
 
 import java.util.ArrayList;
@@ -100,7 +95,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
         private LinearLayout item_first_place;
-        private LinearLayout item_second_place;
         private TextView tv_name;
         private TextView tv_Dis;
         private ImageView img;

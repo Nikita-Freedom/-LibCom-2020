@@ -1,4 +1,4 @@
-package net.smallacademy.tabs;
+package net.smallacademy.tabs.Place;
 
 
 import android.os.Bundle;
@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 
 import net.smallacademy.tabs.Place.PlaceModel;
 import net.smallacademy.tabs.Place.RecyclerViewAdapter;
+import net.smallacademy.tabs.R;
 
 import java.util.ArrayList;
 import java.util.List;

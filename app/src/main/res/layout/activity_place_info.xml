@@ -19,7 +19,7 @@
                android:layout_height="310dp"
                android:layout_weight="70"
                android:scaleType="centerCrop"
-               android:src="@mipmap/ic_launcher"
+               android:src="@mipmap/ic_libforum"
                android:layout_marginLeft="10sp"
                android:layout_marginRight="10sp"
                android:layout_marginTop="10sp"

@@ -1,4 +1,4 @@
-package net.smallacademy.tabs;
+package net.smallacademy.tabs.Place;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+
+import net.smallacademy.tabs.R;
 
 import static net.smallacademy.tabs.R.drawable.hotel;
 
@@ -45,12 +47,6 @@ public class ActivityPlaceInfo extends AppCompatActivity {
 
         TextView name = findViewById(R.id.image_description);
         TextView dis = findViewById(R.id.description);
-
-
-
-
-
-
         name.setText(imageName);
         dis.setText(mDis);
 
