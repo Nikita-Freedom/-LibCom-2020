@@ -1,13 +1,13 @@
 package net.smallacademy.tabs.Place;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import android.os.Bundle;
-
+import com.example.LibForumNew.R;
 import com.google.android.material.tabs.TabLayout;
 
-import net.smallacademy.tabs.R;
 
 
 public class PlaceActivity extends AppCompatActivity{

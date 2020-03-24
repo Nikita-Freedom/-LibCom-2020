@@ -2,6 +2,10 @@ package net.smallacademy.tabs.Place;
 
 
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -9,15 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import android.text.util.Linkify;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import com.google.android.material.snackbar.Snackbar;
-
-import net.smallacademy.tabs.R;
+import com.example.LibForumNew.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -132,7 +128,7 @@ public class FirstPlace extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         lstplacemodel = new ArrayList<>();
-        lstplacemodel.add(new PlaceModel("Библиотека", R.drawable.lera));
+        lstplacemodel.add(new PlaceModel("Библиотека", R.drawable.kaf));
 
     }
 

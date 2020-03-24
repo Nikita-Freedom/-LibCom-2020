@@ -1,18 +1,16 @@
 package net.smallacademy.tabs.Place;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.bumptech.glide.Glide;
+import com.example.LibForumNew.R;
 
-import net.smallacademy.tabs.R;
-
-import static net.smallacademy.tabs.R.drawable.hotel;
 
 public class ActivityPlaceInfo extends AppCompatActivity {
 

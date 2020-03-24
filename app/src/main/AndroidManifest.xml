@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.smallacademy.tabs">
+    package="com.example.LibForumNew">
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -11,24 +11,24 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ActivityAbout"
-            android:parentActivityName=".MainActivity" />
+            android:name="net.smallacademy.tabs.ActivityAbout"
+            android:parentActivityName="net.smallacademy.tabs.MainActivity" />
 
         <activity
-            android:name=".Place.ActivityPlaceInfo"
-            android:parentActivityName=".Place.PlaceActivity" />
+            android:name="net.smallacademy.tabs.Place.ActivityPlaceInfo"
+            android:parentActivityName="net.smallacademy.tabs.Place.PlaceActivity" />
 
-        <activity android:name=".RecipeActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name="net.smallacademy.tabs.RecipeActivity"
+            android:parentActivityName="net.smallacademy.tabs.MainActivity"/>
 
         <activity
-            android:name=".Activities.LoginActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="net.smallacademy.tabs.Activities.LoginActivity"
+            android:parentActivityName="net.smallacademy.tabs.MainActivity" />
         <activity
-            android:name=".Place.PlaceActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="net.smallacademy.tabs.Place.PlaceActivity"
+            android:parentActivityName="net.smallacademy.tabs.MainActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="net.smallacademy.tabs.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
             android:configChanges="orientation">

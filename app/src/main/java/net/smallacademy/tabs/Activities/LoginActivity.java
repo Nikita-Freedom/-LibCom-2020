@@ -1,17 +1,13 @@
 package net.smallacademy.tabs.Activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
-import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.view.Display;
-import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import net.smallacademy.tabs.R;
+import androidx.appcompat.app.AppCompatActivity;
+import com.example.LibForumNew.R;
+
 
 public class LoginActivity extends AppCompatActivity {
     private WebView webView;

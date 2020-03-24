@@ -1,8 +1,11 @@
 package net.smallacademy.tabs;
 
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.example.LibForumNew.R;
+
 
 public class ActivityAbout extends AppCompatActivity {
 

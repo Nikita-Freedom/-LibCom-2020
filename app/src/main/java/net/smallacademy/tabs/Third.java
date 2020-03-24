@@ -3,6 +3,9 @@ package net.smallacademy.tabs;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,14 +14,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
+import com.example.LibForumNew.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import net.smallacademy.tabs.API.APIHelper;
-import net.smallacademy.tabs.R;
 
 import java.util.List;
 

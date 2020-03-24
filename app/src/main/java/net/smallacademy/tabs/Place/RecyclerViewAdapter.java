@@ -16,8 +16,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.LibForumNew.R;
 
-import net.smallacademy.tabs.R;
 
 import java.util.ArrayList;
 import java.util.List;
